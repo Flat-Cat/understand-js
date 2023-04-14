@@ -17,6 +17,5 @@ function greetEnglish (firstname, lastname) {
 function greetSpanish (firstname, lastname) {
     greet (firstname, lastname, "es");
 }
-//Hier haben wir die Argumente der Paraneter firstname und Lastname. Der dritte Wert ist bereits in seiner Funktion enthalten.
 greetEnglish ("John", "Doe");
 greetSpanish ("John", "Doe");

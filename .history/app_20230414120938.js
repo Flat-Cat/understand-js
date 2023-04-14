@@ -10,6 +10,6 @@ function greet(firstname, lastname, language) {
     }
 }
 
-greet ("John", "doe", "en");
+greet ("john", "doe", "en");
 
-greet ("John", "doe", "es");
+greet ("john", "doe", "es");

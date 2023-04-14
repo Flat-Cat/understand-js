@@ -6,10 +6,10 @@ function greet(firstname, lastname, language) {
     }
 
     if (language === "es") {
-        console.log("Hola", firstname, lastname, "!");
+        console.log("Hola", firstname, " ", lastname, "!");
     }
 }
 
-greet ("John", "doe", "en");
+greet ("john", "doe", "en");
 
-greet ("John", "doe", "es");
+greet ("john", "doe", "es");

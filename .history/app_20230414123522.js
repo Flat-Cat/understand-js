@@ -17,5 +17,4 @@ function greetEnglish (firstname, lastname) {
 function greetSpanish (firstname, lastname) {
     greet (firstname, lastname, "es");
 }
-greetEnglish ("John", "Doe");
-greetSpanish ("John", "Doe");
+greetEnglish 

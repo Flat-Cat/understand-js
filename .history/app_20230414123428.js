@@ -10,12 +10,6 @@ function greet(firstname, lastname, language) {
     }
 }
 
-function greetEnglish (firstname, lastname) {
-    greet (firstname, lastname, "en");
-}
-
-function greetSpanish (firstname, lastname) {
-    greet (firstname, lastname, "es");
-}
-greetEnglish ("John", "Doe");
-greetSpanish ("John", "Doe");
+function greetEnglish (firstname, lastname) 
+greet ("John", "doe", "en");
+greet ("John", "doe", "es");

@@ -38,8 +38,7 @@ console.log (cat)
 }("Lucky" , " brown " , "Bark!"))
 
 //__Bsp_3 
-//Hier werden Werte kurzzeitig im Speicher abgelegt, aber nach dem Ausführungskontext(Global) wieder gelöscht. 
-//Diese Werte haben keinen festen Speicherplatz und existieren nur vorübergehend, ohne einen Zweck zu erfüllen. Es tritt dabei auch keine Fehlermeldung auf.
+// Hier sehen wir werte die zwar kurz abgespeichert aber nach dem a
 3;
 "Im a string"
 

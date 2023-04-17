@@ -1,13 +1,13 @@
-//Funktionsanweisung_________________________________________________________________________________________________________
-//Die Greet-Funktion wird im Ausführungskontext direkt im Speicher angelegt.
+// Funktionsanweisung__________________________________________________________________________________________________________________________________
+//Greet wird im Ausführungskontext gleich im Speicher angelegt.
 function greet(name) {
     console.log("Hello " + name);   
 }
 greet("Fifi");
 
-//Funktionsausdruck_________________________________________________________________________________________________________
-//Im Gegensatz zur Funktionsanweisung wird der Funktionsausdruck nicht direkt im Speicher angelegt. 
-//Erst bei der Ausführung des Codes in der zweiten Phase des Ausführungskontexts wird er parallel erstellt.
+//__FunktionsAUSDRUCK__________________________________________________________________________________________________________________________________
+//Wird nicht gleich im speicher angelegt In der ersten Phase des Ausführungskontext, 
+//sondern Parallel erst bei der Ausführung des codes.
 var greetFunc = function(name) {
     console.log("Hello " + name);
 };
@@ -26,7 +26,7 @@ console.log (greeting);
 //__Bsp_1
 var cat = function (catname, catage) {
     return ("Hi "+ catname + "!" + " you are " + catage + " years old, are ya?")
-}("Mimi", 2)
+}("Mimi ", 2)
 
 console.log (cat)
 
@@ -37,11 +37,7 @@ console.log (cat)
  
 }("Lucky" , " brown " , "Bark!"))
 
-//__Bsp_3 
-//Hier werden Werte kurzzeitig im Speicher abgelegt, aber nach dem Ausführungskontext(Global) wieder gelöscht. 
-//Diese Werte haben keinen festen Speicherplatz und existieren nur vorübergehend, ohne einen Zweck zu erfüllen. Es tritt dabei auch keine Fehlermeldung auf.
-3;
-"Im a string"
+
 
 
 

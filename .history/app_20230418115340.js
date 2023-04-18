@@ -2,12 +2,11 @@
 (function (global, name) {
 
     var greeting = "Hello" ;
-
+    
     global.greeting = "Hello";
     console.log (greeting + " " + name );
  
-}(window, "John"));
-// Window = Objekt das den globalen Scope darstellt.
+}(global, "John"));
 
 console.log(greeting);
 // Hier wird "Hola" ausgegeben, weil in unserer HTML-Datei "greet.js" vor "app.js" geladen wird. 

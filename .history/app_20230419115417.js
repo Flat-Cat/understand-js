@@ -33,4 +33,5 @@ specialDog(name);
 
 //_4____________
 specialDog(fur)
-// error: fur is not defined (Variable ist nicht in der Scope-Chain erreichbar)
+// error: specialdog is not defined ()
+

@@ -32,5 +32,6 @@ specialDog(name);
 // Tommy has a nice (leer. Logisch, da "name" bereits einen Wert bekommen hat: "Tommy")
 
 //_4____________
-specialDog(fur)
-// error: fur is not defined (Variable ist nicht in der Scope-Chain erreichbar)
+specialdog(fur)
+// error: specialdog is not defined
+

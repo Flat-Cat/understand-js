@@ -25,12 +25,13 @@ specialDog ("Brown fur");
 
 //_2____________
 specialDog();
-// Tommy has a nice undefined (Es wird ein Wert erwartet für den 2. Parameter "fur")
+// Tommy has a nice undefined fur (Es wird ein Wert erwartet für den 2. Parameter "fur")
 
 //_3____________
 specialDog(name);
-// Tommy has a nice (leer. Logisch, da "name" bereits einen Wert bekommen hat: "Tommy")
+// Tommy has a nice fur (leer. Logisch, da "name" bereits einen Wert bekommen hat: "Tommy")
 
 //_4____________
-specialDog(fur)
-// error: fur is not defined (Variable ist nicht in der Scope-Chain erreichbar)
+specialdog(fur)
+// error: specialdog is not defined (da es nicht in unserer Scope-Chain erreichbar ist)
+// Die JS-Engine hat die Möglichkeit, das Kind- auf Elternklassen verweisen, auch wenn der Code bereits ausgeführt und beendet wurde.

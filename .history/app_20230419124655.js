@@ -20,5 +20,5 @@ fs[1]();
 fs[2]();
 
 // => 3
-// da der Wert erst am Ende der for-Schleife mit return zurückgegeben wird. 
+// da der Wert erst am Ende der for-Schleife mit return zurückgegeben wird (3). 
 // Die Schleife wird erst beendet, wenn der Wert von i nicht mehr kleiner als 3 ist.

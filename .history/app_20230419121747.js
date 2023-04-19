@@ -1,0 +1,3 @@
+function buildFunctions() {
+    var arr = []
+}

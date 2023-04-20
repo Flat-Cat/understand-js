@@ -1,5 +1,6 @@
 function buildFunctions() {
     var arr = [];
+// free var 
     for (var i = 0; i < 3; i++) {
      
         arr.push (
@@ -31,7 +32,7 @@ function buildFunctions2() {
             function(j) {
                 return function() {
                     console.log(j)
-// Hier wird "i" in "j" gespeichert und zwischendurch ausgegeben. Somit wird bei jedem "return"-Aufruf ein neuer Ausführungskontext erschaffen.
+                //Hier wird i in j gespeichert und zwischendurch ausgegeben. Somit wird bei jedem return ein neuer Ausführungskontext erschaffen. 
                 }
             }(i))   
     }

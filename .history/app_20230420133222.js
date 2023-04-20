@@ -1,5 +1,6 @@
 function buildFunctions() {
     var arr = [];
+// free var 
     for (var i = 0; i < 3; i++) {
      
         arr.push (

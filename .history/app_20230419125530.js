@@ -1,5 +1,6 @@
 function buildFunctions() {
     var arr = [];
+// free var 
     for (var i = 0; i < 3; i++) {
      
         arr.push (
@@ -17,9 +18,10 @@ var fs = buildFunctions();
 fs[0]();
 fs[1]();
 fs[2]();
+
 // => 3
-// Die For-Schleife wird solange ausgeführt, solange i kleiner als 3 ist. Sobald i den Wert 3 erreicht hat, 
-// wird die Schleife verlassen und der nächste Befehl ausgeführt, der arr[] zurückgibt.
+// da der Wert erst am Ende der for-Schleife mit return zurückgegeben wird. 
+// Die Schleife wird erst beendet, wenn der Wert von i nicht mehr kleiner als 3 ist.
 
 //__BSP2__
 function buildFunctions2() {
@@ -31,14 +33,15 @@ function buildFunctions2() {
             function(j) {
                 return function() {
                     console.log(j)
-// Hier wird "i" in "j" gespeichert und zwischendurch ausgegeben. Somit wird bei jedem "return"-Aufruf ein neuer Ausführungskontext erschaffen.
+                    //push wird das resultat des dieser ausführungskontexts pushen
                 }
-            }(i))   
+            }(i))
     }
+
     return arr;
 }
 var fs2 = buildFunctions2();
 
-fs2[0]();
-fs2[1]();
-fs2[2]();
+fs[0]();
+fs[1]();
+fs[2]();

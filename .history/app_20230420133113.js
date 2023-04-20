@@ -1,5 +1,6 @@
 function buildFunctions() {
     var arr = [];
+// free var 
     for (var i = 0; i < 3; i++) {
      
         arr.push (
@@ -31,7 +32,10 @@ function buildFunctions2() {
             function(j) {
                 return function() {
                     console.log(j)
-// Hier wird "i" in "j" gespeichert und zwischendurch ausgegeben. Somit wird bei jedem "return"-Aufruf ein neuer Ausführungskontext erschaffen.
+              // In der nächsten Zeile wird der Wert von i in j gespeichert und zwischendurch ausgegeben. 
+              //Dies führt jedoch nicht dazu, dass bei jedem Rückgabewert ein neuer Ausführungskontext erstellt wird. 
+              //Stattdessen wird der gleiche Kontext beibehalten, und die Schleife wird erneut durchlaufen, 
+              //bis die Bedingung nicht mehr erfüllt ist und das Array zurückgegeben wird.
                 }
             }(i))   
     }

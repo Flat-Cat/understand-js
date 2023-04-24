@@ -20,7 +20,7 @@ function makeGreeting (language) {
 var greetEnglish = makeGreeting("en");
 var greetSpanish = makeGreeting("es");
 var greetGerman = makeGreeting ("de");
-// Hier erhält die anonyme Funktion eine Variable, die auf sich referenziert (greetEnglish).
+// Hier erhält die anonyme Funktion eine Variable, die auf sich selbst referenziert (greetEnglish).
 
 greetEnglish ("Fifi"   , "Müller");
 greetSpanish ("Alfonso", "Bronzo");

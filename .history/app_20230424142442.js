@@ -1,8 +1,7 @@
 
-// Function Factory = "Make" => Produziert neue Funktionen
 
 function makeGreeting (language) {
-
+// Function Factory = "Make" => Es produziert eine neue Funk.
     return function (firstname, lastname) {
 
         if (language === "es") {
@@ -18,15 +17,14 @@ function makeGreeting (language) {
 }
 
 var greetEnglish = makeGreeting("en");
-var greetSpanish = makeGreeting("es");
-var greetGerman = makeGreeting ("de");
-// Hier erhält die anonyme Funktion eine Variable, die auf sich referenziert (greetEnglish).
+
+var greetGerman = makeGreeting ("de");var greetSpanish = makeGreeting("es");
+// Hier bekommt die Anonym.Funk. Eine Variable die darauf refferenziert (greetEnglish)
 
 greetEnglish ("Fifi"   , "Müller");
 greetSpanish ("Alfonso", "Bronzo");
 greetGerman ("Conni" , "Fleder");
-// Ausführung der 3 neuen Ausführungskontexte.
-
+// Aufrufen der 3 neuen Ausführungskontexte
 
 
 /*

@@ -11,17 +11,19 @@ function sayHiLater () {
 
 sayHiLater();
 
-/* JQuery nutzt Funktionsanweisungen und First-Class-Funktionen.
+/* JQuery nutzt Funktionsanweisungen und first-class Funktionen
 
 $("button").click(function() {
-}); */
+});
+
+*/
 
 function tellMeWhenDone (callback) {
 
     var a = 1000; //some work
     var b = 2000; //some work
 
-    callback(); // führt die Funktion aus die ich ihm gegeben habe
+    callback(); // es führt die Funktion aus die ich ihm gegeben habe
 }
 // Callback-Funktion
 tellMeWhenDone(function() {

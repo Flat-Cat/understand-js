@@ -1,6 +1,6 @@
 
 //Callback-Funktion:
-// Nachdem eine Funktion erfolgreich aufgerufen wurde, ruft sie im Anschluss eine weitere Funktion auf. Dies nennt man auch "Callback".
+// Nachdem eine Funktion fertig aufgerufen wurde, ruft sie danach eine andere Funktion auf. "Ruft zurück" 
 
 function sayHiLater () {
     var greeting = "Heloo! ";
@@ -11,17 +11,19 @@ function sayHiLater () {
 
 sayHiLater();
 
-/* JQuery nutzt Funktionsanweisungen und First-Class-Funktionen.
+/* JQuery nutzt Funktionsanweisungen und first-class Funktionen
 
 $("button").click(function() {
-}); */
+});
+
+*/
 
 function tellMeWhenDone (callback) {
 
     var a = 1000; //some work
     var b = 2000; //some work
 
-    callback(); // führt die Funktion aus die ich ihm gegeben habe
+    callback(); // der,ca, es führt die Funktion aus die ich ihm gegeben habe
 }
 // Callback-Funktion
 tellMeWhenDone(function() {

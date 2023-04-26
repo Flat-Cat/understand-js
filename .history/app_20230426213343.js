@@ -27,9 +27,10 @@ logPersonName("En ");
 
 
 logName.call(person, "En ", "Es");
-// Call ruft die Funktion auf und gibt Parameter mit.
+//In call gibst du erst die this-variable ein (person)
+// call ruft die Funktion auf und gibt die Parameter mit.
 logName.apply(person, ["En", "Es "])
-// Apply ist genau dasselbe wie call, nur möchte er die Parameter in einem Array erhalten.
+// Apply ist genau dasselbe wie Call, nur möchte er die Parameter in einem Array erhalten.
 
 (function (lang1, lang2) {
     

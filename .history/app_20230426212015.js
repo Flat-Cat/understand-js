@@ -1,6 +1,6 @@
 var person = {
     firstname: "Dominik",
-    lastname: "Schäfer",
+    lastname: "Bebi",
 
     getFullName: function() {
         

@@ -1,6 +1,6 @@
 var person = {
-    firstname: "Dominik",
-    lastname: "Schäfer",
+    firstname: "Domi",
+    lastname: "Bebi",
 
     getFullName: function() {
         
@@ -20,5 +20,4 @@ var logPersonName = logName.bind(person);
 // BIND: Kann Objekte übergeben (z.B. person).
 // Person fungiert nun wie eine this-Variable: sie referenziert den benötigten Scope.
 // Bind kopiert das Objekt, auf das referenziert wurde.
-
 logPersonName();

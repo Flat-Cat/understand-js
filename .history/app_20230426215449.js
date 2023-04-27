@@ -1,0 +1,3 @@
+// functionb borrowing
+
+var 

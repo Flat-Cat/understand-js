@@ -38,21 +38,18 @@ logName.apply(person, ["En ", "Es "]);
     console.log("______________________________");
 }).apply(person, ["Fr ", "De "]);
 
-//_Funktionen_ausleihen_(Der Name ist Programm)______________________________________________________________________________________________
+//_Methoden_ausleihen_______________________________________________________________________________________________
 var person2 = {
     firstname: "Peter",
     lastname: "Lustig",
 }
+
 console.log(person.getFullName.apply(person2));
 
-//_Function_currying_______________________________________________________________________________________________
-// Erstelle eine Kopie einer Funktion, doch mit voreinstellungen:
-// Permanente Standardparameter werden durch Bind erstellt (Default Value).
-// (2) ist nun der StandardParameter.
+//_Methoden_currying_______________________________________________________________________________________________
 function multiply (a,b) {
     return a*b;
 }
 var multipleByTwo = multiply.bind(this,2);
-
-console.log(multipleByTwo(4));
-// 4 ist ein zusätzlicher Parameter. Dieser überschreibt die Standardparameter.
+//Permanente Parameter werden durch Bind erstellt (Default value)
+console.log(multipleByTwo(4))

@@ -38,11 +38,12 @@ logName.apply(person, ["En ", "Es "]);
     console.log("______________________________");
 }).apply(person, ["Fr ", "De "]);
 
-//_Funktionen_ausleihen_(Der Name ist Programm)______________________________________________________________________________________________
+//_Methoden_ausleihen_______________________________________________________________________________________________
 var person2 = {
     firstname: "Peter",
     lastname: "Lustig",
 }
+
 console.log(person.getFullName.apply(person2));
 
 //_Function_currying_______________________________________________________________________________________________

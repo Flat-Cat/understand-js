@@ -1,0 +1,1 @@
+var arr6 = _.map(arr1)

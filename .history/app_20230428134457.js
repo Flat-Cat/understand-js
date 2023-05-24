@@ -50,14 +50,4 @@ var arr5 = mapForEach(arr1, function(item){
 });
 console.log("arr5: " + arr5)
 
-//_Lösung: Aufrufen und die zahl des Limiters nur angeben________________________________________________________________________
-
-var checkPastLimitSimplified = function (limiter) {
-    return function (limiter, item) {
-//Hier wurde ein Objekt erstellt 
-        return item > limiter ;
-    }.bind(this, limiter);
-};
-
-var arr6 = mapForEach (arr1, checkPastLimitSimplified(3));
-console.log("arr6: " + arr6)
+//_Aufgabe: Aufrufen und die zahl des Limiters nur angeben________________________________________________________________________

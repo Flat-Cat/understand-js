@@ -54,10 +54,8 @@ console.log("arr5: " + arr5)
 
 var checkPastLimitSimplified = function (limiter) {
     return function (limiter, item) {
-//Hier wurde ein Objekt erstellt 
         return item > limiter ;
     }.bind(this, limiter);
 };
 
-var arr6 = mapForEach (arr1, checkPastLimitSimplified(3));
-console.log("arr6: " + arr6)
+checkPastLimitSimplified("check past limit simplified: " + chec)

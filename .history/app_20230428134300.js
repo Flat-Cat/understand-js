@@ -25,7 +25,7 @@ var arr3 = mapForEach(arr1, function(item){
 });
 console.log("arr3: " + arr3)
 
-//_arr4_Limiter__________________________________________________________________________________________________________________
+//_Limiter_(Default_Parameter)_mit_BIND____________________________________________
 
 var checkPastLimit = function (limiter, item) {
     return item > limiter;
@@ -44,20 +44,9 @@ var defaultLimiterNumber = function (limiterNumber) {
 
 console.log("Default limiter number: " + defaultLimiterNumber)
 
-//_arr5________________________________________________________________________
-var arr5 = mapForEach(arr1, function(item){
+//_arr4________________________________________________________________________
+var arr4 = mapForEach(arr1, function(item){
     return item > defaultLimiterNumber;
 });
-console.log("arr5: " + arr5)
+console.log("arr4: " + arr4)
 
-//_Lösung: Aufrufen und die zahl des Limiters nur angeben________________________________________________________________________
-
-var checkPastLimitSimplified = function (limiter) {
-    return function (limiter, item) {
-//Hier wurde ein Objekt erstellt 
-        return item > limiter ;
-    }.bind(this, limiter);
-};
-
-var arr6 = mapForEach (arr1, checkPastLimitSimplified(3));
-console.log("arr6: " + arr6)

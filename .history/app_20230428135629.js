@@ -59,5 +59,5 @@ var checkPastLimitSimplified = function (limiter) {
     }.bind(this, limiter);
 };
 
-var arr6 = mapForEach (arr1, checkPastLimitSimplified(3));
+var arr6 = mapForEach (arr1, checkPastLimitSimplified(2));
 console.log("arr6: " + arr6)

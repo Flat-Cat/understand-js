@@ -1,0 +1,4 @@
+
+var person = {
+    firstname: "Default"
+}

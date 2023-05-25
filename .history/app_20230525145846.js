@@ -12,7 +12,7 @@ var sascha = {
     lastName: "Bärtiger"
 }
 
-// Niemals "__proto__ " verändern! Hier wird es nur zum Demonstrieren genutzt. Da es ist Anwendung verlangsamen kann.
+//__Niemals "__proto__ " verändern! Hier wird es nur zum Demonstrieren genutzt. Da es ist Anwendung verlangsamen kann.
  
 sascha.__proto__ = person;
 console.log(sascha.getFullName());

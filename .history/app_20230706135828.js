@@ -31,16 +31,21 @@ var jane = {
         return this.lastName + ", " + this.lastName;
     }
 }
+
 var jim = {
     getFirstName: function () {
         return firstname; 
     }
 }
-//Extend
+
+//_Extend______________________________________________________________________________________________________________
 _.extend(mini, jane, jim)
 console.log(mini)
 
-/* __Proto__:
+
+
+/* Proto:
+
     Das "proto" ist eine interne Eigenschaft in JavaScript-Objekten, die auf den Prototyp eines Objekts verweist.
     Der Prototyp ist wiederum ein anderes Objekt, von dem das aktuelle Objekt erbt. Es ermöglicht die Vererbung von
     Eigenschaften und Methoden von einem Objekt zum anderen. Allerdings wird die direkte Verwendung von "proto" nicht empfohlen,

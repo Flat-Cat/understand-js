@@ -1,4 +1,0 @@
-
-var person = {
-    firstname: "Default"
-}

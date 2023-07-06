@@ -31,6 +31,7 @@ var jane = {
         return this.lastName + ", " + this.lastName;
     }
 }
+
 var jim = {
     getFirstName: function () {
         return firstname; 
@@ -39,6 +40,8 @@ var jim = {
 //Extend
 _.extend(mini, jane, jim)
 console.log(mini)
+
+
 
 /* __Proto__:
     Das "proto" ist eine interne Eigenschaft in JavaScript-Objekten, die auf den Prototyp eines Objekts verweist.

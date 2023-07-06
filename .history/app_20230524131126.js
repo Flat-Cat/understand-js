@@ -1,2 +1,0 @@
-var arr6 = _.map(arr1, functiom(item) {return item * 3});
-console.log>

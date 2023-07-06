@@ -31,6 +31,7 @@ var jane = {
         return this.lastName + ", " + this.lastName;
     }
 }
+
 var jim = {
     getFirstName: function () {
         return firstname; 

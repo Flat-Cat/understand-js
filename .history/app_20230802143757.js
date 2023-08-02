@@ -1,5 +1,3 @@
-// In diesem Beispiel ist gut zu sehen das auch die Funktion von Person übernommen wird, da Mini's Proto person ist
-
 var person = {
     firstName: "Default",
     secondName: "Default",

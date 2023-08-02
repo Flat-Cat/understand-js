@@ -1,8 +1,7 @@
-// In diesem Beispiel ist gut zu sehen das auch die Funktion von Person übernommen wird, da Mini's Proto person ist
-
 var person = {
     firstName: "Default",
     secondName: "Default",
+    lastName: "Default",
     getFullName: function () {
         return this.firstName + " " + this.lastName;
     }
@@ -17,7 +16,10 @@ mini.__proto__ = person;
 
 for (var prop in mini) {
 
-    console.log( prop + ": " + mini[prop]); 
+    if (mini.hasOwnProperty(prop)) {
+        console.log(prop + " <-- Eigenschaft / Wert der eigenschaft--> " + mini[prop]);
+    }
+    console.log( "Function getFullName: " + mini.getFullName()); 
 }
 
 

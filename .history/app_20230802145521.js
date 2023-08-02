@@ -40,7 +40,3 @@ var jim = {
         return firstName;
     }
 }
-
-_.extend (mini, jane, jim);
-
-console.log(mini);

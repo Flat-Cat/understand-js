@@ -41,6 +41,4 @@ var jim = {
     }
 }
 
-_.extend (mini, jane, jim);
-
-console.log(mini);
+_.extend (mini, jane, jim)

@@ -29,18 +29,5 @@ for (var prop in mini) {
 
 
 var jane = {
-    address: "Banana Street 111",
-    getFormalFullName: function () {
-        return this.lastName + ", " + this.firstName;
-    }
+    
 }
-
-var jim = {
-    getFirstName: function () {
-        return firstName;
-    }
-}
-
-_.extend (mini, jane, jim);
-
-console.log(mini);

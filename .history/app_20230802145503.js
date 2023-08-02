@@ -29,7 +29,7 @@ for (var prop in mini) {
 
 
 var jane = {
-    address: "Banana Street 111",
+    address: "Banana Street 111"
     getFormalFullName: function () {
         return this.lastName + ", " + this.firstName;
     }
@@ -37,10 +37,6 @@ var jane = {
 
 var jim = {
     getFirstName: function () {
-        return firstName;
+        return first0
     }
 }
-
-_.extend (mini, jane, jim);
-
-console.log(mini);

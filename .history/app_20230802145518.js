@@ -37,10 +37,6 @@ var jane = {
 
 var jim = {
     getFirstName: function () {
-        return firstName;
+        return firstName<,
     }
 }
-
-_.extend (mini, jane, jim);
-
-console.log(mini);

@@ -26,21 +26,3 @@ for (var prop in mini) {
 }
 // [] Bracket Notation
 // Prop's Datentyp ist String da der Key als Zeichenkette in JS Interpretiert wird
-
-
-var jane = {
-    address: "Banana Street 111",
-    getFormalFullName: function () {
-        return this.lastName + ", " + this.firstName;
-    }
-}
-
-var jim = {
-    getFirstName: function () {
-        return firstName;
-    }
-}
-
-_.extend (mini, jane, jim);
-
-console.log(mini);

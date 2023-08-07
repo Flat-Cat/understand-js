@@ -1,51 +1,55 @@
-var person = {
-    firstName: "Default",
-    secondName: "Default",
-    lastName: "Default",
-    getFullName: function () {
-        return this.firstName + " " + this.lastName;
+function a() {
+    console.log(this);
+//=> Window http://127.0.0.1:5500/index.html
+    this.newvariable = 'hello';
+}
+
+
+var b = function() {
+    console.log(this);   
+}
+
+a();
+//=> hello
+console.log(newvariable); // not good!
+
+b();
+//=> Window http://127.0.0.1:5500/index.html
+
+var c = {
+    name: 'The c object',
+    log: function() {
+
+        var self = this;
+        
+        self.name = 'Updated c object';
+        console.log(self);
+// Object { name: "Updated c object", log: log()}
+        
+        var setname = function(newname) {
+            self.name = newname;   
+        }
+        setname('Updated again! The c object');
+        console.log(self);
+//Object { name: "Updated again! The c object", log: log()}
     }
 }
+c.log();
 
-var mini = {
-    firstName: "Mini",
-    lastName: "Müller"
+/* ausgabe:
+
+Window http://127.0.0.1:5500/index.html
+hello 
+Window http://127.0.0.1:5500/index.html
+
+Object { name: "Updated c object", log: log()
+}
+Object { name: "Updated again! The c object", log: log() 
 }
 
-mini.__proto__ = person;
-
-// FOR IN:  Eine Schleife über jede Eigenschaft im Objekt. Prop = Aktuelles Element
-// KEY:     Der Name des Namen-wert Paares. "FirstName & LastName"
-
-for (var prop in mini) {
-
-    if (mini.hasOwnProperty(prop)) {
-        console.log(prop + " <-- Eigenschaft / Wert der eigenschaft--> " + mini[prop]);
-    }
-    console.log( "Function getFullName: " + mini.getFullName()); 
-}
-// [] Bracket Notation
-// Prop's Datentyp ist String da der Key als Zeichenkette in JS Interpretiert wird
-
-
-var jane = {
-    address: "Banana Street 111",
-    getFormalFullName: function () {
-        return this.lastName + ", " + this.firstName;
-    }
-}
-
-var jim = {
-    getFirstName: function () {
-        return firstName;
-    }
-}
-
-_.extend (mini, jane, jim);
-
-// mini wird nun mit den Eigenschaften von Jane und Jim erweitert (_.extend(target, source1, source2, ...);) 
-// ! Dies ist eine Funktion von Underscore. JavaScript besitzt schon eine interne Funktion die dasselbe tut: Object.assign()
-// ! Das würde so aussehen: Object.assign(mini, jane, jim);
-
-console.log(mini);
-
+/** ___________________________________self = this___________________________________________________________
+ * self = this; speichert eine Referenz auf das aktuelle Objekt in der Variablen self.
+ * Dadurch behält man den Zugriff auf das ursprüngliche Objekt, selbst wenn man innerhalb verschachtelter Funktionen ist.
+ * Das verhindert, dass this in verschachtelten Funktionen auf das globale Objekt(Window) verweist und hilft, unerwartete 
+ * Probleme zu vermeiden, die durch den Kontextverlust entstehen können.
+ */

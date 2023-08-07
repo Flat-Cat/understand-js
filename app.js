@@ -43,4 +43,9 @@ var jim = {
 
 _.extend (mini, jane, jim);
 
+// mini wird nun mit den Eigenschaften von Jane und Jim erweitert (_.extend(target, source1, source2, ...);) 
+// ! Dies ist eine Funktion von Underscore. JavaScript besitzt schon eine interne Funktion die dasselbe tut: Object.assign()
+// ! Das würde so aussehen: Object.assign(mini, jane, jim);
+
 console.log(mini);
+
